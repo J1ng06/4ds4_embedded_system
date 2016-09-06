@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="experiment3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_B0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_R0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Sdram_Control_4Port:u7|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_21m1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_B1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_G0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_R1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Sdram_Control_4Port:u7|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_21m1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Camera_Data_Controller:Camera_Data_unit|Line_Buffer:Raw_Buffer|altshift_taps:altshift_taps_component" CBX_FILE_NAME="shift_taps_gkn.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|Filter_RAM:Filter_RAM_G1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5l52.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_6ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Sdram_Control_4Port:u7|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_21m1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Filter_Pipe:Filter_Pipe_unit|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_4ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|experiment3|Sdram_Control_4Port:u7|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_21m1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

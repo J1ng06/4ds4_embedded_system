@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project experiment3a ****
+
+make all 
+Info: Building ../experiment3a_bsp/
+make --no-print-directory -C ../experiment3a_bsp/
+[BSP build complete]
+[experiment3a build complete]

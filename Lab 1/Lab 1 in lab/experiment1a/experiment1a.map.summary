@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jan 13 15:51:38 2015
+Quartus II 32-bit Version : 12.0 Build 263 08/02/2012 SP 2 SJ Full Version
+Revision Name : experiment1a
+Top-level Entity Name : experiment1a
+Family : Cyclone II
+Total logic elements : 199
+    Total combinational functions : 195
+    Dedicated logic registers : 100
+Total registers : 100
+Total pins : 142
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

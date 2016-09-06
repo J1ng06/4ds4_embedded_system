@@ -1,0 +1,1339 @@
+TimeQuest Timing Analyzer report for experiment1a
+Tue Jan 13 15:51:52 2015
+Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLOCK_50_I'
+ 12. Slow Model Hold: 'CLOCK_50_I'
+ 13. Slow Model Minimum Pulse Width: 'CLOCK_50_I'
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Output Enable Times
+ 19. Minimum Output Enable Times
+ 20. Output Disable Times
+ 21. Minimum Output Disable Times
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Setup: 'CLOCK_50_I'
+ 28. Fast Model Hold: 'CLOCK_50_I'
+ 29. Fast Model Minimum Pulse Width: 'CLOCK_50_I'
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Output Enable Times
+ 35. Minimum Output Enable Times
+ 36. Output Disable Times
+ 37. Minimum Output Disable Times
+ 38. Multicorner Timing Analysis Summary
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Progagation Delay
+ 42. Minimum Progagation Delay
+ 43. Setup Transfers
+ 44. Hold Transfers
+ 45. Report TCCS
+ 46. Report RSKM
+ 47. Unconstrained Paths
+ 48. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                     ;
++--------------------+------------------------------------------------------------------+
+; Quartus II Version ; Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Full Version ;
+; Revision Name      ; experiment1a                                                     ;
+; Device Family      ; Cyclone II                                                       ;
+; Device Name        ; EP2C35F672C6                                                     ;
+; Timing Models      ; Final                                                            ;
+; Delay Model        ; Combined                                                         ;
+; Rise/Fall Delays   ; Unavailable                                                      ;
++--------------------+------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; CLOCK_50_I ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50_I } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 230.36 MHz ; 230.36 MHz      ; CLOCK_50_I ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------+
+; Slow Model Setup Summary            ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; CLOCK_50_I ; -3.341 ; -191.077      ;
++------------+--------+---------------+
+
+
++------------------------------------+
+; Slow Model Hold Summary            ;
++------------+-------+---------------+
+; Clock      ; Slack ; End Point TNS ;
++------------+-------+---------------+
+; CLOCK_50_I ; 0.391 ; 0.000         ;
++------------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++------------+--------+------------------+
+; Clock      ; Slack  ; End Point TNS    ;
++------------+--------+------------------+
+; CLOCK_50_I ; -1.380 ; -101.380         ;
++------------+--------+------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLOCK_50_I'                                                                                                                                                                                         ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                          ; To Node                                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.341 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.389      ;
+; -3.329 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.377      ;
+; -3.323 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.360      ;
+; -3.322 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.359      ;
+; -3.230 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.278      ;
+; -3.227 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.275      ;
+; -3.218 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.266      ;
+; -3.215 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.263      ;
+; -3.175 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.212      ;
+; -3.174 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.211      ;
+; -3.169 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.206      ;
+; -3.168 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.205      ;
+; -3.159 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 4.206      ;
+; -3.145 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 4.181      ;
+; -3.049 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.086      ;
+; -3.048 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.085      ;
+; -3.048 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 4.095      ;
+; -3.045 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 4.092      ;
+; -3.029 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.077      ;
+; -3.017 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.065      ;
+; -2.997 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 4.033      ;
+; -2.991 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 4.027      ;
+; -2.975 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.012      ;
+; -2.974 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 4.011      ;
+; -2.956 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 4.004      ;
+; -2.946 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.981      ;
+; -2.946 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.981      ;
+; -2.946 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.981      ;
+; -2.944 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 3.992      ;
+; -2.927 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.964      ;
+; -2.926 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.963      ;
+; -2.871 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.907      ;
+; -2.866 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 3.914      ;
+; -2.854 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 3.902      ;
+; -2.832 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.868      ;
+; -2.828 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.864      ;
+; -2.828 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 3.875      ;
+; -2.797 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.833      ;
+; -2.755 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 3.802      ;
+; -2.751 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.788      ;
+; -2.750 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.787      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.749 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.785      ;
+; -2.680 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.715      ;
+; -2.680 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.715      ;
+; -2.680 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.715      ;
+; -2.672 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.708      ;
+; -2.672 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.708      ;
+; -2.672 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.708      ;
+; -2.665 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 3.712      ;
+; -2.651 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.688      ;
+; -2.650 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.687      ;
+; -2.606 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.642      ;
+; -2.601 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.637      ;
+; -2.595 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.631      ;
+; -2.595 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.631      ;
+; -2.595 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.631      ;
+; -2.591 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.627      ;
+; -2.587 ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.624      ;
+; -2.586 ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.623      ;
+; -2.573 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.609      ;
+; -2.566 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.602      ;
+; -2.562 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.598      ;
+; -2.545 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.580      ;
+; -2.537 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.572      ;
+; -2.519 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.554      ;
+; -2.519 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.554      ;
+; -2.519 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 3.554      ;
+; -2.514 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.551      ;
+; -2.514 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.550      ;
+; -2.510 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.547      ;
+; -2.487 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]       ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.011      ; 3.534      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.483 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 3.519      ;
+; -2.480 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[0]                                      ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.012      ; 3.528      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
+; -2.475 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 3.512      ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLOCK_50_I'                                                                                                                                                                                                                               ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                             ; To Node                                                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_config_start                                                                      ; LCD_config_start                                                                      ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Top_state.001                                                                         ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Data_Controller:LCD_Data_unit|H_den                                               ; LCD_Data_Controller:LCD_Data_unit|H_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; LCD_TPn_sel                                                                           ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.657      ;
+; 0.519 ; LCD_Data_Controller:LCD_Data_unit|H_Sync                                              ; LCD_Data_Controller:LCD_Data_unit|LTM_HD                                              ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.785      ;
+; 0.525 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.791      ;
+; 0.529 ; Top_state.000                                                                         ; LCD_config_start                                                                      ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.795      ;
+; 0.540 ; LCD_config_start                                                                      ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.806      ;
+; 0.625 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.891      ;
+; 0.650 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.916      ;
+; 0.653 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.919      ;
+; 0.655 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.921      ;
+; 0.655 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.921      ;
+; 0.666 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.932      ;
+; 0.671 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.937      ;
+; 0.681 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.947      ;
+; 0.685 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.951      ;
+; 0.686 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.952      ;
+; 0.703 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.970      ;
+; 0.708 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.973      ;
+; 0.709 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.975      ;
+; 0.710 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.976      ;
+; 0.763 ; LCD_Data_Controller:LCD_Data_unit|V_Sync                                              ; LCD_Data_Controller:LCD_Data_unit|LTM_VD                                              ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.029      ;
+; 0.778 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 1.045      ;
+; 0.782 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 1.049      ;
+; 0.788 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.054      ;
+; 0.793 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.059      ;
+; 0.794 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.060      ;
+; 0.794 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.060      ;
+; 0.796 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.062      ;
+; 0.796 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.062      ;
+; 0.799 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.065      ;
+; 0.799 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.065      ;
+; 0.799 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.065      ;
+; 0.799 ; Top_state.001                                                                         ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.065      ;
+; 0.803 ; Top_state.000                                                                         ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.069      ;
+; 0.804 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.070      ;
+; 0.810 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.076      ;
+; 0.811 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.077      ;
+; 0.812 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.078      ;
+; 0.816 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.082      ;
+; 0.817 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.082      ;
+; 0.817 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.083      ;
+; 0.817 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.083      ;
+; 0.821 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.087      ;
+; 0.824 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.090      ;
+; 0.825 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[1]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[1]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.091      ;
+; 0.831 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.097      ;
+; 0.832 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.098      ;
+; 0.832 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.098      ;
+; 0.833 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.099      ;
+; 0.834 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.100      ;
+; 0.834 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.099      ;
+; 0.837 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.103      ;
+; 0.838 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.104      ;
+; 0.840 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.106      ;
+; 0.843 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.109      ;
+; 0.843 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.109      ;
+; 0.850 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.116      ;
+; 0.855 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.121      ;
+; 0.856 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.122      ;
+; 0.861 ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.127      ;
+; 0.901 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.166      ;
+; 0.919 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.185      ;
+; 0.921 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.187      ;
+; 0.927 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 1.194      ;
+; 0.933 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.198      ;
+; 0.938 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.204      ;
+; 0.940 ; LCD_config_start                                                                      ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.206      ;
+; 0.946 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.212      ;
+; 0.958 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 1.225      ;
+; 0.958 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; Colourbar_Green[7]                                                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.224      ;
+; 0.964 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.230      ;
+; 0.965 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.231      ;
+; 0.976 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.241      ;
+; 0.994 ; LCD_Data_Controller:LCD_Data_unit|V_Count[9]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Sync                                              ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.259      ;
+; 0.995 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[2]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[2]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.261      ;
+; 0.998 ; LCD_Config_Controller:LCD_Config_unit|I2C_start                                       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 1.265      ;
+; 1.000 ; LCD_Data_Controller:LCD_Data_unit|H_Count[9]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[9]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.266      ;
+; 1.002 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.268      ;
+; 1.005 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.270      ;
+; 1.005 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[0]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[0]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.271      ;
+; 1.005 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 1.270      ;
+; 1.007 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.273      ;
+; 1.008 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 1.274      ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLOCK_50_I'                                                                                                                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                                                                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_50_I ; Rise       ; CLOCK_50_I                                                                            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Blue[0]                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Blue[0]                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Green[7]                                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Green[7]                                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Red[7]                                                                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Red[7]                                                                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|Done                                            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|Done                                            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_prev      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_prev      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 9.367 ; 9.367 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 9.367 ; 9.367 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 7.768 ; 7.768 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 8.024 ; 8.024 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 8.051 ; 8.051 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 7.837 ; 7.837 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 8.137 ; 8.137 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 8.067 ; 8.067 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 8.030 ; 8.030 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 8.010 ; 8.010 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 8.087 ; 8.087 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 8.077 ; 8.077 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 7.842 ; 7.842 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 7.584 ; 7.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 7.787 ; 7.787 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 7.797 ; 7.797 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 7.844 ; 7.844 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 7.877 ; 7.877 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.203 ; 8.203 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 8.759 ; 8.759 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 7.768 ; 7.768 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 8.024 ; 8.024 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 8.051 ; 8.051 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 7.837 ; 7.837 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 8.137 ; 8.137 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 8.067 ; 8.067 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 8.030 ; 8.030 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 8.010 ; 8.010 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 8.087 ; 8.087 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 8.077 ; 8.077 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 7.842 ; 7.842 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 7.584 ; 7.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 7.787 ; 7.787 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 7.797 ; 7.797 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 7.844 ; 7.844 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 7.877 ; 7.877 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.203 ; 8.203 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------+
+; Propagation Delay                                      ;
++--------------+-------------+--------+----+----+--------+
+; Input Port   ; Output Port ; RR     ; RF ; FR ; FF     ;
++--------------+-------------+--------+----+----+--------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 10.753 ;    ;    ; 10.753 ;
++--------------+-------------+--------+----+----+--------+
+
+
++--------------------------------------------------------+
+; Minimum Propagation Delay                              ;
++--------------+-------------+--------+----+----+--------+
+; Input Port   ; Output Port ; RR     ; RF ; FR ; FF     ;
++--------------+-------------+--------+----+----+--------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 10.753 ;    ;    ; 10.753 ;
++--------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------------------------+
+; Output Enable Times                                                    ;
++-------------+------------+-------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 8.114 ;      ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.114 ;      ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Output Enable Times                                            ;
++-------------+------------+-------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 8.114 ;      ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.114 ;      ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Output Disable Times                                                            ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 8.114     ;           ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.114     ;           ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                    ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 8.114     ;           ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.114     ;           ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------+
+; Fast Model Setup Summary            ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; CLOCK_50_I ; -0.901 ; -40.294       ;
++------------+--------+---------------+
+
+
++------------------------------------+
+; Fast Model Hold Summary            ;
++------------+-------+---------------+
+; Clock      ; Slack ; End Point TNS ;
++------------+-------+---------------+
+; CLOCK_50_I ; 0.215 ; 0.000         ;
++------------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++------------+--------+------------------+
+; Clock      ; Slack  ; End Point TNS    ;
++------------+--------+------------------+
+; CLOCK_50_I ; -1.380 ; -101.380         ;
++------------+--------+------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLOCK_50_I'                                                                                                                                                                                         ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                          ; To Node                                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.901 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.946      ;
+; -0.895 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.927      ;
+; -0.894 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.926      ;
+; -0.892 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.937      ;
+; -0.869 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.901      ;
+; -0.869 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.901      ;
+; -0.869 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.901      ;
+; -0.855 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.900      ;
+; -0.846 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.891      ;
+; -0.843 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.875      ;
+; -0.842 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.874      ;
+; -0.836 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.881      ;
+; -0.835 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.880      ;
+; -0.826 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.871      ;
+; -0.812 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.844      ;
+; -0.812 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.844      ;
+; -0.811 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.843      ;
+; -0.790 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.835      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.775 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.807      ;
+; -0.770 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.815      ;
+; -0.762 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.794      ;
+; -0.761 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.793      ;
+; -0.760 ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.792      ;
+; -0.734 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.766      ;
+; -0.734 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.766      ;
+; -0.734 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.766      ;
+; -0.729 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.761      ;
+; -0.728 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.773      ;
+; -0.727 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.761      ;
+; -0.727 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.761      ;
+; -0.727 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.761      ;
+; -0.719 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.764      ;
+; -0.718 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.750      ;
+; -0.717 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.749      ;
+; -0.717 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.749      ;
+; -0.713 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.745      ;
+; -0.694 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.726      ;
+; -0.693 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.725      ;
+; -0.692 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.737      ;
+; -0.683 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.728      ;
+; -0.679 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.711      ;
+; -0.674 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.706      ;
+; -0.674 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.706      ;
+; -0.674 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.706      ;
+; -0.669 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.714      ;
+; -0.669 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.703      ;
+; -0.669 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.703      ;
+; -0.669 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.703      ;
+; -0.660 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.705      ;
+; -0.648 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.680      ;
+; -0.647 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                       ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]       ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.692      ;
+; -0.647 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.679      ;
+; -0.643 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.675      ;
+; -0.641 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.686      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.640 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.672      ;
+; -0.638 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.670      ;
+; -0.635 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.633 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.667      ;
+; -0.624 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 1.657      ;
+; -0.624 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 1.657      ;
+; -0.624 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.001      ; 1.657      ;
+; -0.611 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.643      ;
+; -0.606 ; LCD_Data_Controller:LCD_Data_unit|H_Count[9]                                       ; LCD_Data_Controller:LCD_Data_unit|V_Count[0]       ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.651      ;
+; -0.604 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_G[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.636      ;
+; -0.603 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; -0.001     ; 1.634      ;
+; -0.603 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_R[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.000      ; 1.635      ;
+; -0.601 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.635      ;
+; -0.601 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.635      ;
+; -0.601 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3] ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14] ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.002      ; 1.635      ;
+; -0.599 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                       ; LCD_Data_Controller:LCD_Data_unit|LTM_B[7]         ; CLOCK_50_I   ; CLOCK_50_I  ; 1.000        ; 0.013      ; 1.644      ;
++--------+------------------------------------------------------------------------------------+----------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLOCK_50_I'                                                                                                                                                                                                                               ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                             ; To Node                                                                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_config_start                                                                      ; LCD_config_start                                                                      ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_state[1]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Top_state.001                                                                         ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Data_Controller:LCD_Data_unit|H_den                                               ; LCD_Data_Controller:LCD_Data_unit|H_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; LCD_TPn_sel                                                                           ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.367      ;
+; 0.239 ; LCD_Data_Controller:LCD_Data_unit|H_Sync                                              ; LCD_Data_Controller:LCD_Data_unit|LTM_HD                                              ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.391      ;
+; 0.243 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.395      ;
+; 0.250 ; LCD_config_start                                                                      ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.402      ;
+; 0.265 ; Top_state.000                                                                         ; LCD_config_start                                                                      ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.417      ;
+; 0.288 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.440      ;
+; 0.288 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.440      ;
+; 0.290 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.442      ;
+; 0.291 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.443      ;
+; 0.293 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[7]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.445      ;
+; 0.294 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.446      ;
+; 0.302 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.454      ;
+; 0.307 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.459      ;
+; 0.308 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[3]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.460      ;
+; 0.322 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[8]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.473      ;
+; 0.324 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.477      ;
+; 0.325 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.476      ;
+; 0.326 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.477      ;
+; 0.331 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.483      ;
+; 0.355 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.507      ;
+; 0.356 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.508      ;
+; 0.357 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.509      ;
+; 0.358 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.510      ;
+; 0.359 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; LCD_Data_Controller:LCD_Data_unit|V_Sync                                              ; LCD_Data_Controller:LCD_Data_unit|LTM_VD                                              ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.511      ;
+; 0.362 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; Top_state.000                                                                         ; Top_state.001                                                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.516      ;
+; 0.364 ; Top_state.001                                                                         ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[8]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.518      ;
+; 0.366 ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[3]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.519      ;
+; 0.369 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.521      ;
+; 0.369 ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[6]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.521      ;
+; 0.370 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[4]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.522      ;
+; 0.371 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[5]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[1]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[1]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.525      ;
+; 0.374 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.526      ;
+; 0.375 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.527      ;
+; 0.377 ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[1]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[3]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.530      ;
+; 0.381 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[4]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[6]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.533      ;
+; 0.381 ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[4]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.533      ;
+; 0.382 ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[6]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.534      ;
+; 0.384 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.536      ;
+; 0.385 ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[8]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.537      ;
+; 0.387 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.539      ;
+; 0.389 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.541      ;
+; 0.389 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[2]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[4]                                     ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.541      ;
+; 0.418 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.569      ;
+; 0.418 ; LCD_config_start                                                                      ; LCD_TPn_sel                                                                           ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.570      ;
+; 0.422 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.575      ;
+; 0.422 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.574      ;
+; 0.423 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.575      ;
+; 0.423 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[5]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.574      ;
+; 0.424 ; LCD_Config_Controller:LCD_Config_unit|I2C_state[0]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.577      ;
+; 0.427 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.002     ; 0.577      ;
+; 0.435 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.588      ;
+; 0.440 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.591      ;
+; 0.441 ; LCD_Data_Controller:LCD_Data_unit|V_Count[7]                                          ; Colourbar_Green[7]                                                                    ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.593      ;
+; 0.448 ; LCD_Config_Controller:LCD_Config_unit|I2C_start                                       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.600      ;
+; 0.448 ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.001      ; 0.601      ;
+; 0.449 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[2]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[2]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.601      ;
+; 0.449 ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[3]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.601      ;
+; 0.450 ; LCD_Data_Controller:LCD_Data_unit|H_Count[9]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[9]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.602      ;
+; 0.452 ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                          ; LCD_Data_Controller:LCD_Data_unit|H_Count[7]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.604      ;
+; 0.452 ; LCD_Data_Controller:LCD_Data_unit|V_Count[5]                                          ; LCD_Data_Controller:LCD_Data_unit|V_den                                               ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.603      ;
+; 0.452 ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; -0.001     ; 0.603      ;
+; 0.453 ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[0]                                         ; LCD_Data_Controller:LCD_Data_unit|oCoord_X[0]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.605      ;
+; 0.456 ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[2]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.608      ;
+; 0.457 ; LCD_Data_Controller:LCD_Data_unit|H_Count[10]                                         ; LCD_Data_Controller:LCD_Data_unit|H_Count[10]                                         ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.609      ;
+; 0.460 ; LCD_Data_Controller:LCD_Data_unit|V_Count[9]                                          ; LCD_Data_Controller:LCD_Data_unit|V_Count[9]                                          ; CLOCK_50_I   ; CLOCK_50_I  ; 0.000        ; 0.000      ; 0.612      ;
++-------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLOCK_50_I'                                                                                                                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                                                                                ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_50_I ; Rise       ; CLOCK_50_I                                                                            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Blue[0]                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Blue[0]                                                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Green[7]                                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Green[7]                                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; Colourbar_Red[7]                                                                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; Colourbar_Red[7]                                                                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|Done                                            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|Done                                            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|Acknowledge         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|I2C_scen            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_count[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_prev      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|clock_div_prev      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[0]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[10]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[11]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[12]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[13]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[14]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[15]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[1]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[2]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[3]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[4]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[5]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[6]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[7]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[8]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat[9]             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|sdat_en             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[0]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[1]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[2]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[3]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_M16_Controller:I2C_unit|state_counter[4]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[0]                                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[10]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[11]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[12]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[13]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[14]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[15]                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50_I ; Rise       ; LCD_Config_Controller:LCD_Config_unit|I2C_data[1]                                     ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 5.250 ; 5.250 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 5.250 ; 5.250 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 4.568 ; 4.568 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 4.571 ; 4.571 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 4.724 ; 4.724 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 4.655 ; 4.655 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 4.719 ; 4.719 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 4.709 ; 4.709 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 4.570 ; 4.570 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 4.483 ; 4.483 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 4.526 ; 4.526 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 4.536 ; 4.536 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 4.579 ; 4.579 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 4.600 ; 4.600 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.711 ; 4.711 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 4.972 ; 4.972 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 4.568 ; 4.568 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 4.571 ; 4.571 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 4.724 ; 4.724 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 4.655 ; 4.655 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 4.719 ; 4.719 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 4.709 ; 4.709 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 4.570 ; 4.570 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 4.483 ; 4.483 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 4.526 ; 4.526 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 4.536 ; 4.536 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 4.579 ; 4.579 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 4.600 ; 4.600 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.711 ; 4.711 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 6.363 ;    ;    ; 6.363 ;
++--------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 6.363 ;    ;    ; 6.363 ;
++--------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------------------------+
+; Output Enable Times                                                    ;
++-------------+------------+-------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.628 ;      ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.628 ;      ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Output Enable Times                                            ;
++-------------+------------+-------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.628 ;      ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.628 ;      ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Output Disable Times                                                            ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.628     ;           ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.628     ;           ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                    ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.628     ;           ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.628     ;           ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.341   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  CLOCK_50_I      ; -3.341   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -191.077 ; 0.0   ; 0.0      ; 0.0     ; -101.38             ;
+;  CLOCK_50_I      ; -191.077 ; 0.000 ; N/A      ; N/A     ; -101.380            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 9.367 ; 9.367 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 9.367 ; 9.367 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 7.768 ; 7.768 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 7.748 ; 7.748 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 8.024 ; 8.024 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 8.051 ; 8.051 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 7.837 ; 7.837 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 8.137 ; 8.137 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 8.067 ; 8.067 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 8.030 ; 8.030 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 8.010 ; 8.010 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 8.087 ; 8.087 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 8.077 ; 8.077 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 7.842 ; 7.842 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 7.524 ; 7.524 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 7.534 ; 7.534 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 7.584 ; 7.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 7.787 ; 7.787 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 7.797 ; 7.797 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 7.844 ; 7.844 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 7.814 ; 7.814 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 7.819 ; 7.819 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 7.849 ; 7.849 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 7.877 ; 7.877 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 8.203 ; 8.203 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]   ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[4]  ; CLOCK_50_I ; 4.972 ; 4.972 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[5]  ; CLOCK_50_I ; 4.568 ; 4.568 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[6]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[7]  ; CLOCK_50_I ; 4.548 ; 4.548 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[8]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[9]  ; CLOCK_50_I ; 4.671 ; 4.671 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[10] ; CLOCK_50_I ; 4.571 ; 4.571 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[11] ; CLOCK_50_I ; 4.724 ; 4.724 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[12] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[13] ; CLOCK_50_I ; 4.675 ; 4.675 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[14] ; CLOCK_50_I ; 4.655 ; 4.655 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[15] ; CLOCK_50_I ; 4.719 ; 4.719 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[16] ; CLOCK_50_I ; 4.709 ; 4.709 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[17] ; CLOCK_50_I ; 4.570 ; 4.570 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[18] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[19] ; CLOCK_50_I ; 4.423 ; 4.423 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[20] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[21] ; CLOCK_50_I ; 4.433 ; 4.433 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[22] ; CLOCK_50_I ; 4.483 ; 4.483 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[23] ; CLOCK_50_I ; 4.526 ; 4.526 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[24] ; CLOCK_50_I ; 4.536 ; 4.536 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[25] ; CLOCK_50_I ; 4.579 ; 4.579 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[26] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[27] ; CLOCK_50_I ; 4.549 ; 4.549 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[28] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[29] ; CLOCK_50_I ; 4.554 ; 4.554 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[30] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[31] ; CLOCK_50_I ; 4.584 ; 4.584 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[32] ; CLOCK_50_I ; 4.600 ; 4.600 ; Rise       ; CLOCK_50_I      ;
+;  GPIO_0[35] ; CLOCK_50_I ; 4.711 ; 4.711 ; Rise       ; CLOCK_50_I      ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------+
+; Progagation Delay                                      ;
++--------------+-------------+--------+----+----+--------+
+; Input Port   ; Output Port ; RR     ; RF ; FR ; FF     ;
++--------------+-------------+--------+----+----+--------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 10.753 ;    ;    ; 10.753 ;
++--------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Progagation Delay                            ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; SWITCH_I[17] ; GPIO_0[33]  ; 6.363 ;    ;    ; 6.363 ;
++--------------+-------------+-------+----+----+-------+
+
+
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; CLOCK_50_I ; CLOCK_50_I ; 2216     ; 0        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; CLOCK_50_I ; CLOCK_50_I ; 2216     ; 0        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 101   ; 101  ;
+; Unconstrained Output Ports      ; 31    ; 31   ;
+; Unconstrained Output Port Paths ; 34    ; 34   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Full Version
+    Info: Processing started: Tue Jan 13 15:51:51 2015
+Info: Command: quartus_sta experiment1a -c experiment1a
+Info: qsta_default_script.tcl version: #2
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'experiment1a.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_50_I CLOCK_50_I
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.341
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.341      -191.077 CLOCK_50_I 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CLOCK_50_I 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -101.380 CLOCK_50_I 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.901
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.901       -40.294 CLOCK_50_I 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLOCK_50_I 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -101.380 CLOCK_50_I 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 341 megabytes
+    Info: Processing ended: Tue Jan 13 15:51:52 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

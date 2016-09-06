@@ -1,0 +1,19 @@
+
+**** Build of configuration Nios II for project experiment3b ****
+
+make all 
+Info: Building ../experiment3b_bsp/
+make --no-print-directory -C ../experiment3b_bsp/
+[BSP build complete]
+Info: Compiling experiment3b.c to obj/default/experiment3b.o
+nios2-elf-gcc -xc -MP -MMD -c -I../experiment3b_bsp//HAL/inc -I../experiment3b_bsp/ -I../experiment3b_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/experiment3b.o experiment3b.c
+experiment3b.c: In function 'main':
+experiment3b.c:157: warning: implicit declaration of function 'alt_irq_register'
+Info: Linking experiment3b.elf
+nios2-elf-g++  -T'../experiment3b_bsp//linker.x' -msys-crt0='../experiment3b_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../experiment3b_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=experiment3b.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o experiment3b.elf obj/default/experiment3b.o -lm 
+nios2-elf-insert experiment3b.elf --thread_model hal --cpu_name cpu_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name experiment3b --quartus_project_dir "/home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment3b" --sopcinfo /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment3b/software/experiment3b_bsp/../../experiment3b.sopcinfo
+Info: (experiment3b.elf) 3556 Bytes program size (code + initialized data).
+Info:                    12 KBytes free for stack + heap.
+Info: Creating experiment3b.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source experiment3b.elf >experiment3b.objdump
+[experiment3b build complete]

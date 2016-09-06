@@ -1,0 +1,6 @@
+
+State Machine - |experiment1a|Top_state
+Name Top_state.000 Top_state.010 Top_state.001 
+Top_state.000 0 0 0 
+Top_state.001 1 0 1 
+Top_state.010 1 1 0 

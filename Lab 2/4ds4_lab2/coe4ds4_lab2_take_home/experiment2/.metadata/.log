@@ -1,0 +1,163 @@
+!SESSION 2015-01-20 22:13:39.327 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-01-20 22:14:43.345
+!MESSAGE Indexed 'experiment2_bsp' (77 sources, 114 headers) in 1.69 sec: 3,888 declarations; 5,141 references; 0 unresolved inclusions; 1 syntax errors; 14 unresolved names (0.15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-01-20 22:14:54.559
+!MESSAGE Indexed 'experiment2' (1 sources, 51 headers) in 0.26 sec: 1,265 declarations; 1,399 references; 4 unresolved inclusions; 0 syntax errors; 12 unresolved names (0.45%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:15:26.820
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:15:28.627
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:17:39.770
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:17:40.521
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:17:42.308
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:21:14.778
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:21:15.558
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:21:17.396
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:27:59.609
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:28:00.404
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:28:02.209
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:10.666
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:11.414
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:13.210
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:27.676
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:28.427
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:30.241
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:55.717
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:56.435
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:31:58.241
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:32:28.146
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:32:28.907
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:32:30.715
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:33:32.864
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:33:33.609
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:33:35.426
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:34:46.569
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:34:47.316
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:34:49.104
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:35:03.623
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:35:04.389
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:35:06.191
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:43:51.607
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:43:52.408
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:43:54.215
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:58:33.173
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:58:33.950
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 22:58:35.754
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:08:33.120
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:08:33.870
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:08:35.656
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:11:46.603
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:11:47.346
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:11:49.142
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:22:19.367
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:22:20.124
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:22:21.948
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:24:08.018
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB 7-3]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:24:08.807
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-01-20 23:24:10.629
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [USB 7-3]' --device=1 --instance=0 --go /home/ECE/chenj39/Desktop/coe4ds4_lab2_2015/experiment2/software/experiment2/experiment2.elf]

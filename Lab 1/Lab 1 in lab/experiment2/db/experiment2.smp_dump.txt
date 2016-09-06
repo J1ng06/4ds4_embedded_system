@@ -1,0 +1,22 @@
+
+State Machine - |experiment2|Top_state
+Name Top_state.011 Top_state.010 Top_state.001 Top_state.000 Top_state.100 
+Top_state.000 0 0 0 0 0 
+Top_state.001 0 0 1 1 0 
+Top_state.010 0 1 0 1 0 
+Top_state.011 1 0 0 1 0 
+Top_state.100 0 0 0 1 1 
+
+State Machine - |experiment2|Touch_Panel_Controller:Touch_Panel_unit|TP_state
+Name TP_state.S_TP_DEBOUNCE TP_state.S_TP_BACKOFF TP_state.S_TP_ZF_Y TP_state.S_TP_RECV_Y TP_state.S_TP_SEND_Y TP_state.S_TP_ZF_X TP_state.S_TP_RECV_X TP_state.S_TP_SEND_X TP_state.S_TP_SYNC_1K TP_state.S_TP_ENABLE TP_state.S_TP_IDLE 
+TP_state.S_TP_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+TP_state.S_TP_ENABLE 0 0 0 0 0 0 0 0 0 1 1 
+TP_state.S_TP_SYNC_1K 0 0 0 0 0 0 0 0 1 0 1 
+TP_state.S_TP_SEND_X 0 0 0 0 0 0 0 1 0 0 1 
+TP_state.S_TP_RECV_X 0 0 0 0 0 0 1 0 0 0 1 
+TP_state.S_TP_ZF_X 0 0 0 0 0 1 0 0 0 0 1 
+TP_state.S_TP_SEND_Y 0 0 0 0 1 0 0 0 0 0 1 
+TP_state.S_TP_RECV_Y 0 0 0 1 0 0 0 0 0 0 1 
+TP_state.S_TP_ZF_Y 0 0 1 0 0 0 0 0 0 0 1 
+TP_state.S_TP_BACKOFF 0 1 0 0 0 0 0 0 0 0 1 
+TP_state.S_TP_DEBOUNCE 1 0 0 0 0 0 0 0 0 0 1 

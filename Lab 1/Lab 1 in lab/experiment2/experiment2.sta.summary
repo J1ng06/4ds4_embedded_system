@@ -1,0 +1,85 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : -4.055
+TNS   : -279.323
+
+Type  : Slow Model Setup 'C_50MHz'
+Slack : 9.631
+TNS   : 0.000
+
+Type  : Slow Model Hold 'C_50MHz'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : -5.524
+TNS   : -1202.384
+
+Type  : Slow Model Recovery 'C_50MHz'
+Slack : 6.029
+TNS   : 0.000
+
+Type  : Slow Model Removal 'C_50MHz'
+Slack : 3.719
+TNS   : 0.000
+
+Type  : Slow Model Removal 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 5.204
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 1.786
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'C_50MHz'
+Slack : 7.620
+TNS   : 0.000
+
+Type  : Fast Model Setup 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : -1.488
+TNS   : -102.297
+
+Type  : Fast Model Setup 'C_50MHz'
+Slack : 15.475
+TNS   : 0.000
+
+Type  : Fast Model Hold 'C_50MHz'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : -3.022
+TNS   : -563.076
+
+Type  : Fast Model Recovery 'C_50MHz'
+Slack : 7.751
+TNS   : 0.000
+
+Type  : Fast Model Removal 'C_50MHz'
+Slack : 2.107
+TNS   : 0.000
+
+Type  : Fast Model Removal 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 3.716
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'u7|sdram_pll1|altpll_component|pll|clk[0]'
+Slack : 1.786
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'C_50MHz'
+Slack : 7.620
+TNS   : 0.000
+
+------------------------------------------------------------

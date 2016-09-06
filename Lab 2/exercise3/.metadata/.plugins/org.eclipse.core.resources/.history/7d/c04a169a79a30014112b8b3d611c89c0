@@ -1,0 +1,137 @@
+#include "io.h"
+#include "system.h"
+#include "alt_types.h"
+#include "sys/alt_stdio.h"
+#include <unistd.h>
+
+alt_u16 disp_seven_seg(alt_u8 val) {
+    switch (val) {
+        case  0 : return 0x40;
+        case  1 : return 0x79;
+        case  2 : return 0x24;
+        case  3 : return 0x30;
+        case  4 : return 0x19;
+        case  5 : return 0x12;
+        case  6 : return 0x02;
+        case  7 : return 0x78;
+        case  8 : return 0x00;
+        case  9 : return 0x18;
+        case 10 : return 0x08;
+        case 11 : return 0x03;
+        case 12 : return 0x46;
+        case 13 : return 0x21;
+        case 14 : return 0x06;
+        case 15 : return 0x0e;
+        default : return 0x7f;
+    }
+}        
+
+// ISR for Group A Switches
+void SW_GRPA_interrupt (int *amount) {
+
+    alt_u8 selection;
+
+    // Read and clear interrupt from Register 3
+    selection = (alt_u8) (IORD(SWITCH_GRPA_I_BASE, 3) & 0xff);
+    IOWR(SWITCH_GRPA_I_BASE, 3, 0x0);
+
+    // Update amount
+    switch (selection) {
+	case 1:
+		*amount += 1;
+		break;
+	case 2:
+		*amount += 2;
+		break;
+	case 4:
+		*amount += 5;
+		break;
+	case 8:
+		*amount += 10;
+		break;
+    }
+
+    // Update LEDs to show there is an active transaction
+    IOWR(LED_GREEN_O_BASE, 0, 0x1);
+}
+
+void purchase(int *amount, int value) {
+    if (*amount >= value) {
+		if ((*amount = *amount - value) > 0) {
+				IOWR(SEVEN_SEGMENT_N_O_0_BASE, 0, disp_seven_seg(*amount % 10));
+				IOWR(SEVEN_SEGMENT_N_O_1_BASE, 0, disp_seven_seg(*amount / 10));
+		}
+		IOWR(LED_GREEN_O_BASE,0,0x4);
+		usleep(2000000);
+
+		// close transaction
+		*amount = 0;
+		IOWR(LED_GREEN_O_BASE,0,0x0);
+        IOWR(SEVEN_SEGMENT_N_O_0_BASE, 0, disp_seven_seg(16));
+        IOWR(SEVEN_SEGMENT_N_O_1_BASE, 0, disp_seven_seg(16));
+    } else {
+		IOWR(LED_GREEN_O_BASE,0,0x9); // note the "active transaction" LED is still on
+		usleep(1500000);
+		IOWR(LED_GREEN_O_BASE,0,0x1);
+    }
+}
+
+// ISR for Group B Switches
+void SW_GRPB_interrupt (int *amount) {
+
+    alt_u8 selection;
+
+    // Read and clear interrupt
+    selection = (alt_u8) (IORD(SWITCH_GRPB_I_BASE, 3) & 0xff);
+    IOWR(SWITCH_GRPB_I_BASE, 3, 0x0);
+
+    // Update amount
+    if (*amount > 0) { // if there is an active transaction
+        switch (selection) {
+            case 0x1:  // ticket to montreal $41
+		      purchase(amount, 41);
+		    break;
+	        case 0x2:  // ticket to ottawa $32
+		      purchase(amount, 32);
+		    break;
+	        case 0x4:  // ticket to toronto $15
+		      purchase(amount, 15);
+		    break;
+	        case 0x8:  // cancel
+              IOWR(SEVEN_SEGMENT_N_O_0_BASE, 0, disp_seven_seg(*amount % 10));
+              IOWR(SEVEN_SEGMENT_N_O_1_BASE, 0, disp_seven_seg(*amount / 10));
+	          IOWR(LED_GREEN_O_BASE,0,0x2);
+	          usleep(2500000);
+
+		      // close transaction
+		      *amount = 0;
+		      IOWR(LED_GREEN_O_BASE,0,0x0);
+        	  IOWR(SEVEN_SEGMENT_N_O_0_BASE, 0, disp_seven_seg(16));
+        	  IOWR(SEVEN_SEGMENT_N_O_1_BASE, 0, disp_seven_seg(16));
+		    break;
+        }
+    }
+}
+
+int main()
+{ 
+    volatile int amount = 0;
+    alt_putstr("Exercise 3 is running!\n");
+
+    IOWR(SWITCH_GRPA_I_BASE, 3, 0x0);
+    IOWR(SWITCH_GRPA_I_BASE, 2, 0xF);
+    alt_irq_register(SWITCH_GRPA_I_IRQ, &amount, (void *)SW_GRPA_interrupt);
+
+    IOWR(SWITCH_GRPB_I_BASE, 3, 0x0);
+    IOWR(SWITCH_GRPB_I_BASE, 2, 0xF);
+    alt_irq_register(SWITCH_GRPB_I_IRQ, &amount, (void *)SW_GRPB_interrupt);
+
+
+    IOWR(SEVEN_SEGMENT_N_O_0_BASE, 0, disp_seven_seg(16));
+    IOWR(SEVEN_SEGMENT_N_O_1_BASE, 0, disp_seven_seg(16));
+
+    IOWR(LED_GREEN_O_BASE, 0, 0x0);
+    while (1);
+
+    return 0;
+}
